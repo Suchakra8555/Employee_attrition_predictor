@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #result-image-container {
+            text-align: center;
+        }
+
+        #result-image {
+            max-width: 100%; /* Ensure the image does not exceed its natural size */
+            height: auto; /* Maintain the aspect ratio */
+        }
+    </style>
+    <title>Employee Attrition Prediction</title>
+    <link rel="icon" href="/static/images/logo.jpg">
+</head>
+
+<body>
+    <br>
+    <div id="result-image-container" align="center">
+        <img id="result-image" src="{{ res_Img }}" alt="Prediction Result Image">
+    </div>
+    <br>
+    <h1 align='center' id="result-text"></h1>
+    <br>
+    <div class="reset_button" align="center">
+        <a href="/prediction" id="reset"><p><b>‖※ RESET ※‖</b></p></a>
+    </div>
+    <br>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const resultText = document.getElementById("result-text");
+            const resultMessage = "{{ result }}";
+            function generateResultText() {
+                let animatedText = "";
+                for (let i = 0; i < resultMessage.length; i++) {
+                    setTimeout(function () {
+                        animatedText += resultMessage[i];
+                        resultText.textContent = animatedText;
+                    }, i * 50); // Adjust the delay as needed
+                }
+            }
+            generateResultText();
+        });
+    </script>
+</body>
+
+</html>

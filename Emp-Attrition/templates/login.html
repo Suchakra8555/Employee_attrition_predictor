@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <title>HR Login</title>
+    <link rel="icon" href="/static/images/logo.jpg"> 
+</head>
+
+<body>
+
+    <div class="login-container">
+        <form action="/login" method="POST">
+            <label for="hr_id">HR ID<span style="color: red;">*</span>:</label>
+            <input type="text" id="hr_id" name="hr_id" required>
+
+            <label for="password">Password<span style="color: red;">*</span>:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <h6 style="color: red;"><center>{{result}}</center></h6>
+            <p class="login-note">Note: Login using the provided ID and password.</p>
+        </form>
+    </div>
+
+</body>
+
+</html>

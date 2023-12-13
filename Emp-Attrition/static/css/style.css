@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#welcome-container {
+    text-align: center;
+}
+
+#welcome-text {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+#button {
+    border: 5px;
+    background-color: #00308F;
+    color: rgb(247, 246, 246);
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+#button:hover {
+    background-color: rgb(64, 161, 202);
+    transition: .5s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+.reset_button {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(60, 77, 162);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Center the button horizontally */
+}
+
+#reset {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}

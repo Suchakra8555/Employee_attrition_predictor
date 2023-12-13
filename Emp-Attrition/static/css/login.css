@@ -1,0 +1,69 @@
+* {
+    padding: 5px;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url('/static/images/hr2.jpeg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+label {
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(64, 161, 202);
+    transition: 0.5s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+/* Your existing styles */
+
+.login-note {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+#reset {
+    display: block;
+  }

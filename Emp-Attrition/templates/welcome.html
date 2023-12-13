@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Welcome</title>
+    <link rel="icon" href="/static/images/logo.jpg"> 
+</head>
+<body>
+    <div id="welcome-container">
+        <h1 id="welcome-text"></h1>
+    </div>
+    <script >
+        document.addEventListener("DOMContentLoaded", function () {
+        const welcomeText = document.getElementById("welcome-text");
+        const welcomeMessage = "Welcome to the Project 'Employee Attrition Predictior'";
+
+        function generateWelcomeText() {
+            let animatedText = "";
+            for (let i = 0; i < welcomeMessage.length; i++) {
+                setTimeout(function () {
+                    animatedText += welcomeMessage[i];
+                    welcomeText.textContent = animatedText;
+                }, i * 50); // Adjust the delay as needed
+            }
+        }
+
+        generateWelcomeText();
+    });
+    </script>
+    <br/>
+    <h6>click on procced</h6>
+    <button onclick="redirectToNewPage()" id = "button" style="vertical-align:middle">Proceed</button>
+    <script>
+        function redirectToNewPage() {
+            window.location.href = "/login";
+        }
+    </script>
+</body>
+</html>
