@@ -41,4 +41,4 @@ This project leverages the following tools and technologies:
 - **Flask:** Employed for building the web application.
 - **HTML and CSS:** Utilized for designing and styling the user interface.
 
-Feel free to explore the code in the repository and contribute to the enhancement of this predictive model for employee attrition. Your input is valuable in refining strategies for retaining valuable talent in the ever-evolving workplace.
+
